@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+:root {
+    --pure-white: #FFFFFF;
+    --cream: #F2EAE2;
+    --aurometal-saurus: #6C7289;
+    --deep-aquamarine: #3D8168;
+    --deep-aquaramarine-hover: #1A4032;
+    --gunmetal: #1C232B;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--cream);
+
+}
+
+
+.card-container {
+    width: 343px;
+    height: 640px;
+    background-color: var(--pure-white);
+    margin: 10% auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+   
+    
+}
+.desktop-image{
+    display: none;
+}
+.mobile-image{
+    width: 343px;
+    height: 240px;
+}
+h3{ 
+    margin: 8px auto 12px 24px;
+    max-height: 14.63px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+h2{
+    margin: 0 24px 16px;
+    line-height: 32px;
+    font-size: 32px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+
+}
+p{
+  margin: 0 24px 24px;
+  line-height: 23px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;  
+}
+.prices{
+  
+    color: var(--deep-aquamarine);
+    line-height: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Fraunces', sans-serif;
+}
+.last-price{
+    margin-left: 24px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--aurometal-saurus);
+    text-decoration:line-through;
+}
+
+.add-to-cart-button{
+    margin: 0 25px 24px 23px;
+    width: 295px;
+    height: 48px;
+    background-color: var(--deep-aquamarine);
+    color: var(--pure-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    line-height: 17.07px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+}
+.icon-cart{
+    margin: 16px 11.61px 16px 0;
+    width: 14.39px;
+    height: 16px;
+}
+.text-button{
+    margin: 16px;
+}
+
+.add-to-cart-button:hover{
+    background: var(--deep-aquaramarine-hover)
+}
+
+@media all and (min-width: 768px ) {
+
+    .card-container{
+        width: 600px;
+        height: 450px;
+        flex-direction: row;
+        overflow: auto;
+    }
+
+    .desktop-image{
+        width: 300px;
+        height: 450px;
+        display: block;
+        overflow: auto;
+    }
+    .mobile-image{
+        display: none;
+    }
+    
+.info-container{
+    width: 300px;
+}
+.add-to-cart-button{
+    width: 236px;
+}
+    
+}
